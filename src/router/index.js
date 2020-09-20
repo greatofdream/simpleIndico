@@ -8,11 +8,12 @@ import Meetdetail from '@/components/meeting/Meetdetail'
 Vue.use(Router)
 
 const router = new Router({
-    mode: 'history',
+    base: '/meeting/',
+    //mode: 'hash',
     routes: [
         { path: '/', name: 'homepage', component: Homepage,
           children: [
-              //{ path: '/', component: Meetlist },
+              { path: '/', component: Meetlist },
               { path: '/meet/list', component: Meetlist },
               { path: '/meet/detail/:id', component: Meetdetail, props: true }
           ]
