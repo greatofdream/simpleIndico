@@ -13,7 +13,7 @@
     </div>
     <div class="bottom clearfix">
         <div class="detaillink">
-          <el-button type="text" class="button" @click="jump('/meet/detail/'+id)">Detail</el-button>
+          <el-button type="info" @click="jump('/meet/detail/'+id)">Detail</el-button>
         </div>
     </div>
   </div>
@@ -62,9 +62,11 @@ export default {
   margin-bottom: 10px;
 }
 .fixspace{
+  margin-top: 10px;
   padding-left: 5px;
   padding-right: 5px;
-  font-size: 10pt;
+  font-size: 13pt;
+  color: #010911;
 }
 .detaillink{
   padding-left: 10px;
@@ -77,5 +79,9 @@ export default {
 .meetinfo{
   text-align: left;
   margin-left: 20px;
+}
+.detaillink{
+  font-size: 13pt;
+  padding-bottom: 5px;
 }
 </style>

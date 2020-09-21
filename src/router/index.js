@@ -8,7 +8,7 @@ import Meetdetail from '@/components/meeting/Meetdetail'
 Vue.use(Router)
 
 const router = new Router({
-    base: '/meeting/',
+    base: '/seminar/',
     //mode: 'hash',
     routes: [
         { path: '/', name: 'homepage', component: Homepage,

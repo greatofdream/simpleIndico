@@ -39,5 +39,6 @@ export default {
 .meeting{
   height: 1000px;
   margin-top: 20px;
+  font-size: 12pt;
 }
 </style>

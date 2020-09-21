@@ -24,10 +24,12 @@
          {{abstract}}
         </div>
         <div class="download fixspace">
-          <i class="el-icon-link fixspace"></i> pdf: <a :href="pdfLink" target="_blank">download</a>
+          <i class="el-icon-link fixspace"></i> pdf: <span v-if="pdfLink==''">wait to upload</span>
+          <a v-else :href="pdfLink" target="_blank">download</a>
         </div>
         <div class="download fixspace">
-          <i class="el-icon-link fixspace"></i>video: <a :href="videoLink" target="_blank">download</a>
+          <i class="el-icon-link fixspace"></i>video: <span v-if="pdfLink==''">wait to upload</span>
+          <a v-else :href="videoLink" target="_blank">download</a>
         </div>
     </div>
   </div>
@@ -105,6 +107,7 @@ img{
   padding-left: 5px;
   padding-right: 5px;
   font-size: 13pt;
+  color: #010911;
 }
 .detaillink{
   padding-left: 10px;
