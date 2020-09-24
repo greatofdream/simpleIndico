@@ -51,6 +51,13 @@ export default {
           }
       ]
     }
+  },
+  created: function() {
+    this.$axios.get('/tuhepApi/meeting/talk.json')
+      .then(response => {
+        console.log(response)
+        this.meetinfo = response.data[this.id]
+      })
   }
 }
 </script>

@@ -12,6 +12,7 @@
 <script>
 import Meeting from './Meeting'
 import Banner from './Banner'
+
 export default {
   name: 'Meetlist',
   components: {
@@ -24,6 +25,13 @@ export default {
           { title: '2020 Seminar Series on Lepton Flavor Violation and New Physics', dateBegin: '2020-9-16', dateEnd: '2020-9-26', id: 0}
       ]
     }
+  },
+  created: function() {
+    this.$axios.get('/tuhepApi/meeting/config.json')
+      .then(response => {
+        console.log(response)
+        this.meetinfo = response.data.meetinfo
+      })
   }
 }
 </script>

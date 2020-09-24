@@ -28,7 +28,7 @@
           <a v-else :href="pdfLink" target="_blank">download</a>
         </div>
         <div class="download fixspace">
-          <i class="el-icon-link fixspace"></i>video: <span v-if="pdfLink==''">wait to upload</span>
+          <i class="el-icon-link fixspace"></i>video: <span v-if="videoLink==''">wait to upload</span>
           <a v-else :href="videoLink" target="_blank">download</a>
         </div>
     </div>
