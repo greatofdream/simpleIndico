@@ -1,6 +1,6 @@
 <template>
   <el-container class="containerbody">
-      <el-aside width="200px" height="1000px">
+      <el-aside>
       <Meeting></Meeting>
       </el-aside>
       <el-main>
@@ -44,5 +44,8 @@ export default {
 }
 .el-container {
   margin-bottom: 40px;
+}
+.el-aside{
+  overflow: unset;
 }
 </style>

@@ -1,19 +1,23 @@
 <template>
-  <div class="meeting" style="background-color: #78C2AD">
+  <div class="meeting">
       <el-menu
           default-active="1"
-          class="aside-menu">
+          mode="vertical"
+          class="aside-menu"
+          background-color="#996699"
+          text-color="#990066"
+          active-text-color="#ffffff">
           <el-menu-item index="1">
-            <router-link to='/meet/list'>
+            <router-link class="seminarMenu" to='/meet/list'>
               <i class="el-icon-menu"></i>
-              <span>Meeting List</span>
+              <span class="menuTitle">Seminar INFO</span>
             </router-link>
           </el-menu-item>
           <el-menu-item index="2">
-            <router-link to='/meet/list'>
+            <a class="seminarMenu" href="http://hep.tsinghua.edu.cn/indico">
               <i class="el-icon-document"></i>
-              <span>Meeting Notify</span>
-            </router-link>  
+              <span class="menuTitle">INDICO</span>
+            </a>  
           </el-menu-item>
       </el-menu>
   </div>
@@ -40,5 +44,19 @@ export default {
   height: 1000px;
   margin-top: 20px;
   font-size: 12pt;
+}
+.seminarMenu{
+  text-decoration: none;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  font-size: large;
+  align-items: center;
+  justify-content: space-between;
+  color: unset;
+}
+.menuTitle{
+  justify-content: center;
+  flex-grow: 1;
 }
 </style>
