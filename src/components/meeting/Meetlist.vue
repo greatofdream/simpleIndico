@@ -22,7 +22,7 @@ export default {
   data: function() {
     return {
       meetinfo: [
-          { title: '2020 Seminar Series on Lepton Flavor Violation and New Physics', dateBegin: '2020-9-16', dateEnd: '2020-9-26', id: 0}
+          { title: '2020 Seminar Series on Lepton Flavor Violation and New Physics', dateBegin: '2020-9-16', dateEnd: '2020-9-26', id: 0, priority:0}
       ]
     }
   },
@@ -30,7 +30,7 @@ export default {
     this.$axios.get('/tuhepApi/meeting/config.json')
       .then(response => {
         console.log(response)
-        this.meetinfo = response.data.meetinfo
+        this.meetinfo = response.data.meetinfo.sort(function(a,b){return a.priority-b.priority})
       })
   }
 }
@@ -47,5 +47,8 @@ export default {
 }
 .el-aside{
   overflow: unset;
+}
+Banner{
+  margin: 10px;
 }
 </style>
