@@ -4,7 +4,7 @@
       <Meeting></Meeting>
       </el-aside>
       <el-main>
-          <Banner v-for="mi in meetinfo" :key="mi.id" :dateBegin="mi.dateBegin" :dateEnd="mi.dateEnd" :title="mi.title" :id="mi.id"></Banner>
+          <Banner class="banner" v-for="mi in meetinfo" :key="mi.id" :dateBegin="mi.dateBegin" :dateEnd="mi.dateEnd" :title="mi.title" :id="mi.id"></Banner>
       </el-main>
   </el-container>
 </template>
@@ -48,7 +48,7 @@ export default {
 .el-aside{
   overflow: unset;
 }
-Banner{
+.banner{
   margin: 10px;
 }
 </style>
