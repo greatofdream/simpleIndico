@@ -1,6 +1,6 @@
 <template>
   <div class="banner">
-  <div class="portrait">
+  <div v-if="poster!=''" class="portrait">
     <a :href="poster" target="_blank">
     <img :src="speakerImage">
     </a>
@@ -89,7 +89,6 @@ export default {
 }
 .abstract{
   margin-left: 10px;
-  margin-top: 20px;
 }
 img{
   height: 300px;
@@ -101,9 +100,11 @@ img{
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: center;
+
 }
 .fixspace{
-  margin-top: 10px;
+  /*margin-top: 10px;*/
+  margin-bottom:10px;
   padding-left: 5px;
   padding-right: 5px;
   font-size: 13pt;
@@ -116,6 +117,9 @@ img{
   font-size: 13pt;
   font-weight: normal;
   color: #fff;
+  max-height: 110px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .download{
   text-align: left;
@@ -123,6 +127,8 @@ img{
 .meetinfo{
   text-align: left;
   margin-left: 20px;
+  max-height: 30px;
+  overflow: hidden;
 }
 .content{
   flex-grow: 1;

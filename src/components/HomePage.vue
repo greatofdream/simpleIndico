@@ -56,7 +56,7 @@ export default {
 </script>
 <style scoped>
 .containerbody{
-  height: 1000px;
+  /*height: 1000px;*/
   background-color: #fff;
 }
 .navbutton{
@@ -79,5 +79,6 @@ export default {
   justify-content: center;
   list-style: none;
   padding: 0.5rem 1rem;
+  flex-wrap: wrap;
 }
 </style>

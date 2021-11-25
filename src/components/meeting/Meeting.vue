@@ -1,10 +1,16 @@
 <template>
   <div class="meeting">
+	<el-switch
+  v-model="isCollapse"
+  active-color="#13ce66"
+  inactive-color="#ff4949">
+</el-switch>
       <el-menu
+	:collapse="isCollapse" 
           default-active="1"
           mode="vertical"
           class="aside-menu"
-          background-color="#996699"
+          background-color="#d3dce6"
           text-color="#990066"
           active-text-color="#ffffff">
           <el-menu-item index="1">
@@ -28,7 +34,7 @@ export default {
   name: 'Meeting',
   data: function() {
     return {
-      
+      isCollapse: true
     }
   },
   methods: {
@@ -41,7 +47,7 @@ export default {
 </script>
 <style scoped>
 .meeting{
-  height: 1000px;
+  /*height: 1000px;*/
   margin-top: 20px;
   font-size: 12pt;
 }
