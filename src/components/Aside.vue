@@ -10,8 +10,7 @@
           mode="vertical"
           class="aside-menu"
           background-color="#d3dce6"
-          text-color="#990066"
-          active-text-color="#ffffff">
+          >
           <el-menu-item index="1">
             <router-link class="seminarMenu" to='/meet/list'>
               <i class="el-icon-menu"></i>
