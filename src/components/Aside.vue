@@ -6,18 +6,19 @@
   </button>
       <el-menu
 	:collapse="isCollapse" 
-          default-active="1"
+          default-active="$route.path"
+          router="true"
           mode="vertical"
           class="aside-menu"
           background-color="#d3dce6"
           >
-          <el-menu-item index="1">
+          <el-menu-item index="/meet/list">
             <router-link class="seminarMenu" to='/meet/list'>
               <i class="el-icon-menu"></i>
               <span class="menuTitle">Seminar INFO</span>
             </router-link>
           </el-menu-item>
-          <el-menu-item index="2">
+          <el-menu-item index="/conference/list">
             <router-link class="seminarMenu" to='/conference/list'>
               <i class="el-icon-menu"></i>
               <span class="menuTitle">Conference Files</span>

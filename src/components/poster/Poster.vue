@@ -1,6 +1,6 @@
 <template>
   <el-card class="banner">
-      <div slot="header" class="clearfix"><a :href="pdfLink" target="_blank">
+      <div slot="header" class="clearfix"><a :href="pdfLink" target="_blank" style=" text-decoration: none;">
           <span class="title">{{title}}</span></a>
       </div>
   <div class="content">
