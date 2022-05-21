@@ -4,6 +4,8 @@ import Router from 'vue-router'
 import Homepage from '@/components/HomePage'
 import Meetlist from '@/components/meeting/Meetlist'
 import Meetdetail from '@/components/meeting/Meetdetail'
+import Posterlist from '@/components/poster/Posterlist'
+import Posterdetail from '@/components/poster/Posterdetail'
 
 Vue.use(Router)
 
@@ -15,7 +17,9 @@ const router = new Router({
           children: [
               { path: '/', component: Meetlist },
               { path: '/meet/list', component: Meetlist },
-              { path: '/meet/detail/:id', component: Meetdetail, props: true }
+              { path: '/meet/detail/:id', component: Meetdetail, props: true },
+              { path: '/conference/list', component: Posterlist },
+              { path: '/conference/detail/:id', component: Posterdetail, props: true }
           ]
      }
     ]
