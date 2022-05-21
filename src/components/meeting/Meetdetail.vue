@@ -4,6 +4,11 @@
       <Meeting></Meeting>
       </el-aside>
       <el-main>
+        <el-breadcrumb separator-class="el-icon-arrow-right">
+          <el-breadcrumb-item :to="{ path: '/' }">Home</el-breadcrumb-item>
+          <el-breadcrumb-item :to="{ path: '/meet/list' }">SeminarInfo</el-breadcrumb-item>
+          <el-breadcrumb-item :to="{ path: '/meet/detail' }">Detail</el-breadcrumb-item>
+        </el-breadcrumb>
           <Speach v-for="mi in meetinfo" :key="mi.id" :poster="mi.poster" :date="mi.date" :timeBegin="mi.timeBegin" :timeEnd="mi.timeEnd" :title="mi.title" :id="mi.id"
            :speaker="mi.speaker" :speakerImage="mi.speakerImage" :abstract="mi.abstract" :room="mi.room" :pdfLink="mi.pdfLink" :videoLink="mi.videoLink"></Speach>
       </el-main>
