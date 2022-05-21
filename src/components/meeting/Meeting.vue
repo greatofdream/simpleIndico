@@ -1,10 +1,9 @@
 <template>
   <div class="meeting">
-	<el-switch
-  v-model="isCollapse"
-  active-color="#13ce66"
-  inactive-color="#ff4949">
-</el-switch>
+  <button @click="collapseStatus" style="width:100%;">
+    <i v-if="isCollapse" class="el-icon-d-arrow-left"></i>
+    <i v-else class="el-icon-d-arrow-right"></i>
+  </button>
       <el-menu
 	:collapse="isCollapse" 
           default-active="1"
@@ -34,13 +33,21 @@ export default {
   name: 'Meeting',
   data: function() {
     return {
-      isCollapse: true
+      isCollapse: false
+    }
+  },
+  mounted(){
+    window.onresize = () => {
+      return this.isCollapse = document.body.clientWidth<600;
     }
   },
   methods: {
     jump: function(val) {
       console.log(val)
       this.$router.push({path: val})
+    },
+    collapseStatus: function() {
+      this.isCollapse = !this.isCollapse
     }
   }
 }
