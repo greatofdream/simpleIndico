@@ -19,6 +19,12 @@
             </router-link>
           </el-menu-item>
           <el-menu-item index="2">
+            <router-link class="seminarMenu" to='/meet/conference'>
+              <i class="el-icon-menu"></i>
+              <span class="menuTitle">Conference Files</span>
+            </router-link>
+          </el-menu-item>
+          <el-menu-item index="3">
             <a class="seminarMenu" href="http://hep.tsinghua.edu.cn/indico">
               <i class="el-icon-document"></i>
               <span class="menuTitle">INDICO</span>

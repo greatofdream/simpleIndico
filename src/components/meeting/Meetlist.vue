@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import Meeting from './Meeting'
+import Meeting from '../Aside'
 import Banner from './Banner'
 
 export default {

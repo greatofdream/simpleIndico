@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import Meeting from './Meeting'
+import Meeting from '../Aside'
 import Speach from './Speach'
 export default {
   name: 'Meetdetail',
