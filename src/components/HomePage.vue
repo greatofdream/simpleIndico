@@ -16,7 +16,7 @@
           <el-menu-item class="item" index="5"><a href="http://hep.tsinghua.edu.cn/research.html" class="navbutton">研究方向<br/>Research</a></el-menu-item>
           <el-menu-item class="item" index="6"><a href="http://hep.tsinghua.edu.cn/empolyment.html" class="navbutton">招聘信息<br/>Employment</a></el-menu-item>
           <el-menu-item class="item" index="7"><a href="http://hep.tsinghua.edu.cn/" class="navbutton">发表<br/>Publication</a></el-menu-item>
-          <el-menu-item class="item" index="8"><a href="http://hep.tsinghua.edu.cn/" class="navbutton">论文<br/>Thesis</a></el-menu-item>
+          <el-menu-item class="item" index="8"><a href="http://hep.tsinghua.edu.cn/thesis.html" class="navbutton">论文<br/>Thesis</a></el-menu-item>
           <el-menu-item class="item" index="9"><a href="http://hep.tsinghua.edu.cn/" class="navbutton">文件下载<br/>File Download</a></el-menu-item>
           <el-menu-item class="item" index="10"><a href="http://hep.tsinghua.edu.cn/training.html" class="navbutton">学术训练<br/>Training</a></el-menu-item>
           <el-menu-item class="item" index="11"><router-link to='/meet/list' class="navbutton">会议记录<br/>Meeting Info</router-link></el-menu-item>
@@ -59,6 +59,10 @@ export default {
   /*height: 1000px;*/
   background-color: #fff;
 }
+.el-menu-item{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
 .navbutton{
   text-decoration: none;
   font-size: 1rem;
@@ -66,8 +70,8 @@ export default {
   line-height: 1.5;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   display: block;
 }
 .item{
