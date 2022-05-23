@@ -44,7 +44,7 @@ export default {
     this.$axios.get('/tuhepApi/poster/poster.json')
       .then(response => {
         console.log(response)
-        this.meetinfo = response.data[this.id]
+        this.meetinfo = (response.data[this.id]).sort(function (a,b){return Number(a.abstractId)-Number(b.abstractId)})
       })
   }
 }
