@@ -10,7 +10,7 @@
           <el-breadcrumb-item :to="{ path: '/conference/detail' }">Detail</el-breadcrumb-item>
         </el-breadcrumb>
           <Poster v-for="mi in meetinfo" :key="mi.id"  :title="mi.title" :id="mi.id"
-           :speaker="mi.author" :abstract="mi.abstract" :pdfLink="mi.filename"></Poster>
+           :speaker="mi.author" :posterId="mi.posterId" :abstractId="mi.abstractId" :abstract="mi.abstract" :pdfLink="mi.filename"></Poster>
       </el-main>
     </el-container>
 </template>

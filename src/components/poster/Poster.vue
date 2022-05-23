@@ -7,6 +7,10 @@
     <div class="meetinfo">
       <i class="el-icon-user fixspace"></i>
       <span class="fixspace">{{speaker}}</span>
+      <div class="posterid">
+      <span class="fixspace">PosterID:{{posterId}}</span>
+      <span class="fixspace">AbstractID:{{abstractId}}</span>
+      </div>
     </div>
     <div class="abstract">
         <div class="detaillink">
@@ -24,6 +28,8 @@ export default {
     id: Number,
     title: String,
     speaker: String,
+    posterId: String,
+    abstractId: String,
     abstract: String,
     pdfLink: String,
   },
@@ -70,17 +76,19 @@ img{
   height: 300px;
 }
 .title{
-  font-size: 20pt;
+  font-size: 16pt;
   color: #f9f9f9;
   font-weight: normal;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   text-align: center;
 
 }
+.posterid{
+  float: right;
+}
 .fixspace{
   /*margin-top: 10px;*/
-  margin-bottom:10px;
+  margin-bottom:5px;
   padding-left: 5px;
   padding-right: 5px;
   font-size: 13pt;
