@@ -1,5 +1,5 @@
 module.exports = { 
-    publicPath: '/seminar/',
+    publicPath: '/',
     chainWebpack: (config) => {
         config
             .plugin('html')
