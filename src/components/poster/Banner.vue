@@ -13,7 +13,7 @@
     </div>
     <div class="bottom clearfix">
         <div class="detaillink">
-          <el-button type="info" @click="jump('/conference/detail/'+id)">Detail</el-button>
+          <el-button type="info" @click="jump('/seminar/conference/detail/'+id)">Detail</el-button>
         </div>
     </div>
   </div>

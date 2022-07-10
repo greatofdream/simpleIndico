@@ -12,14 +12,14 @@
           class="aside-menu"
           background-color="#d3dce6"
           >
-          <el-menu-item index="/meet/list">
-            <router-link class="seminarMenu" to='/meet/list'>
+          <el-menu-item index="/seminar/meet/list">
+            <router-link class="seminarMenu" to='/seminar/meet/list'>
               <i class="el-icon-menu"></i>
               <span class="menuTitle">Seminar INFO</span>
             </router-link>
           </el-menu-item>
-          <el-menu-item index="/conference/list">
-            <router-link class="seminarMenu" to='/conference/list'>
+          <el-menu-item index="/seminar/conference/list">
+            <router-link class="seminarMenu" to='/seminar/conference/list'>
               <i class="el-icon-menu"></i>
               <span class="menuTitle">Conference Files</span>
             </router-link>

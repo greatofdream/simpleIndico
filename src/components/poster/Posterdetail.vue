@@ -5,9 +5,9 @@
       </el-aside>
       <el-main>
         <el-breadcrumb separator-class="el-icon-arrow-right">
-          <el-breadcrumb-item :to="{ path: '/' }">Home</el-breadcrumb-item>
-          <el-breadcrumb-item :to="{ path: '/conference/list' }">ConferenceFiles</el-breadcrumb-item>
-          <el-breadcrumb-item :to="{ path: '/conference/detail' }">Detail</el-breadcrumb-item>
+          <el-breadcrumb-item :to="{ path: '/seminar/' }">Home</el-breadcrumb-item>
+          <el-breadcrumb-item :to="{ path: '/seminar/conference/list' }">ConferenceFiles</el-breadcrumb-item>
+          <el-breadcrumb-item :to="{ path: '/seminar/conference/detail' }">Detail</el-breadcrumb-item>
         </el-breadcrumb>
           <Poster v-for="mi in meetinfo" :key="mi.id"  :title="mi.title" :id="mi.id"
            :speaker="mi.author" :posterId="mi.posterId" :abstractId="mi.abstractId" :abstract="mi.abstract" :pdfLink="mi.filename"></Poster>

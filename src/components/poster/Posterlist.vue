@@ -5,8 +5,8 @@
       </el-aside>
       <el-main>
           <el-breadcrumb separator-class="el-icon-arrow-right">
-            <el-breadcrumb-item :to="{ path: '/' }">Home</el-breadcrumb-item>
-            <el-breadcrumb-item :to="{ path: '/conference/list' }">Conference</el-breadcrumb-item>
+            <el-breadcrumb-item :to="{ path: '/seminar/' }">Home</el-breadcrumb-item>
+            <el-breadcrumb-item :to="{ path: '/seminar/conference/list' }">Conference</el-breadcrumb-item>
           </el-breadcrumb>
           <Banner class="banner" v-for="mi in meetinfo" :key="mi.id" :dateBegin="mi.dateBegin" :dateEnd="mi.dateEnd" :title="mi.title" :location="mi.location" :id="mi.id"></Banner>
       </el-main>
