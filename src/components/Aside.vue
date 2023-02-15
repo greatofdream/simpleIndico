@@ -5,9 +5,9 @@
     <i v-else class="el-icon-d-arrow-right"></i>
   </button>
       <el-menu
-	:collapse="isCollapse" 
+          :collapse="isCollapse" 
           default-active="$route.path"
-          router="true"
+          :router=true
           mode="vertical"
           class="aside-menu"
           background-color="#d3dce6"

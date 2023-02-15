@@ -23,8 +23,8 @@
 export default {
   name: 'Banner',
   props: {
-    dateBegin: Date,
-    dateEnd: Date,
+    dateBegin: String,
+    dateEnd: String,
     id: Number,
     title: String
   },

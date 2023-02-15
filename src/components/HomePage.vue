@@ -1,7 +1,7 @@
 <template>
   <div class="homepage">
     <el-container>
-      <el-header height="auto">
+      <el-header height="auto" class="container">
         <el-menu
           :default-active="activeHeadIndex"
           class="head-menu"
@@ -55,6 +55,7 @@ export default {
 }
 </script>
 <style scoped>
+@import '../styles/media.css';
 .containerbody{
   /*height: 1000px;*/
   background-color: #fff;
